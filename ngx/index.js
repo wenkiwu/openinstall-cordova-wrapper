@@ -1,0 +1,34 @@
+import { __decorate, __extends } from "tslib";
+import { Injectable } from '@angular/core';
+import { AwesomeCordovaNativePlugin, cordova } from '@awesome-cordova-plugins/core';
+import * as i0 from "@angular/core";
+var OpenInstall = /** @class */ (function (_super) {
+    __extends(OpenInstall, _super);
+    function OpenInstall() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    OpenInstall.prototype.configAndroid = function (options) { return cordova(this, "configAndroid", { "sync": true, "platforms": ["Android"] }, arguments); };
+    OpenInstall.prototype.serialEnabled = function (enabled) { return cordova(this, "serialEnabled", { "sync": true }, arguments); };
+    OpenInstall.prototype.clipBoardEnabled = function (enabled) { return cordova(this, "clipBoardEnabled", { "sync": true }, arguments); };
+    OpenInstall.prototype.init = function () { return cordova(this, "init", { "sync": true }, arguments); };
+    OpenInstall.prototype.getInstall = function (onSuccess, onError, time) { return cordova(this, "getInstall", { "sync": true }, arguments); };
+    OpenInstall.prototype.getInstallCanRetry = function (onSuccess, onError, time) { return cordova(this, "getInstallCanRetry", { "sync": true, "platforms": ["Android"] }, arguments); };
+    OpenInstall.prototype.registerWakeUpHandler = function (onSuccess, onError) { return cordova(this, "registerWakeUpHandler", { "sync": true }, arguments); };
+    OpenInstall.prototype.reportRegister = function () { return cordova(this, "reportRegister", { "sync": true }, arguments); };
+    OpenInstall.prototype.reportEffectPoint = function (pointId, pointValue, extras) { return cordova(this, "reportEffectPoint", { "sync": true }, arguments); };
+    OpenInstall.prototype.reportShare = function (onSuccess, onError, shareCode, sharePlatform) { return cordova(this, "reportShare", { "sync": true }, arguments); };
+    OpenInstall.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: OpenInstall, deps: null, target: i0.ɵɵFactoryTarget.Injectable });
+    OpenInstall.ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: OpenInstall });
+    OpenInstall.pluginName = "OpenInstall";
+    OpenInstall.plugin = "cordova-plugin-openinstall";
+    OpenInstall.pluginRef = "openinstall";
+    OpenInstall.repo = "https://github.com/openinstall/cordova-plugin-openinstall";
+    OpenInstall.platforms = ["Android", "iOS"];
+    OpenInstall = __decorate([], OpenInstall);
+    return OpenInstall;
+}(AwesomeCordovaNativePlugin));
+export { OpenInstall };
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: OpenInstall, decorators: [{
+            type: Injectable
+        }], propDecorators: { configAndroid: [], serialEnabled: [], clipBoardEnabled: [], init: [], getInstall: [], getInstallCanRetry: [], registerWakeUpHandler: [], reportRegister: [], reportEffectPoint: [], reportShare: [] } });
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi9zcmMvQGF3ZXNvbWUtY29yZG92YS1wbHVnaW5zL3BsdWdpbnMvb3Blbmluc3RhbGwvbmd4L2luZGV4LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFBQSxPQUFPLEVBQUUsVUFBVSxFQUFFLE1BQU0sZUFBZSxDQUFDO0FBQzNDLE9BQU8sdUNBQStDLE1BQU0sK0JBQStCLENBQUM7OztJQXlCM0QsK0JBQTBCOzs7O0lBR3pELG1DQUFhLGFBQUMsT0FBc0I7SUFHcEMsbUNBQWEsYUFBQyxPQUFnQjtJQUc5QixzQ0FBZ0IsYUFBQyxPQUFnQjtJQUdqQywwQkFBSTtJQUdKLGdDQUFVLGFBQUMsU0FBbUIsRUFBRSxPQUFpQixFQUFFLElBQVk7SUFHL0Qsd0NBQWtCLGFBQUMsU0FBbUIsRUFBRSxPQUFpQixFQUFFLElBQVk7SUFHdkUsMkNBQXFCLGFBQUMsU0FBbUIsRUFBRSxPQUFpQjtJQUc1RCxvQ0FBYztJQUdkLHVDQUFpQixhQUFDLE9BQWUsRUFBRSxVQUFrQixFQUFFLE1BQWtDO0lBR3pGLGlDQUFXLGFBQUMsU0FBbUIsRUFBRSxPQUFpQixFQUFFLFNBQWlCLEVBQUUsYUFBcUI7NkdBOUJqRixXQUFXO2lIQUFYLFdBQVc7Ozs7OztJQUFYLFdBQVcsa0JBQVgsV0FBVztzQkExQnhCO0VBMEJpQywwQkFBMEI7U0FBOUMsV0FBVzs0RkFBWCxXQUFXO2tCQUR2QixVQUFVOzhCQUlULGFBQWEsTUFHYixhQUFhLE1BR2IsZ0JBQWdCLE1BR2hCLElBQUksTUFHSixVQUFVLE1BR1Ysa0JBQWtCLE1BR2xCLHFCQUFxQixNQUdyQixjQUFjLE1BR2QsaUJBQWlCLE1BR2pCLFdBQVciLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBJbmplY3RhYmxlIH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XHJcbmltcG9ydCB7IFBsdWdpbiwgQ29yZG92YSwgQXdlc29tZUNvcmRvdmFOYXRpdmVQbHVnaW4gfSBmcm9tICdAYXdlc29tZS1jb3Jkb3ZhLXBsdWdpbnMvY29yZSc7XHJcblxyXG5cclxuZXhwb3J0IGludGVyZmFjZSBDb25maWdPcHRpb25zIHtcclxuICBhbmRyb2lkSWQ/OiBzdHJpbmc7XHJcbiAgc2VyaWFsTnVtYmVyPzogc3RyaW5nO1xyXG4gIHNpbXVsYXRvckRpc2FibGVkPzogYm9vbGVhbjtcclxuICBzdG9yYWdlRGlzYWJsZWQ/OiBib29sZWFuO1xyXG4gIGFkRW5hYmxlZD86IGJvb2xlYW47XHJcbiAgbWFjRGlzYWJsZWQ/OiBib29sZWFuO1xyXG4gIG1hY0FkZHJlc3M/OiBzdHJpbmc7XHJcbiAgaW1laURpc2FibGVkPzogYm9vbGVhbjtcclxuICBpbWVpPzogc3RyaW5nO1xyXG4gIGdhaWQ/OiBzdHJpbmc7XHJcbiAgb2FpZD86IHN0cmluZztcclxufVxyXG5cclxuQFBsdWdpbih7XHJcbiAgcGx1Z2luTmFtZTogJ09wZW5JbnN0YWxsJyxcclxuICBwbHVnaW46ICdjb3Jkb3ZhLXBsdWdpbi1vcGVuaW5zdGFsbCcsXHJcbiAgcGx1Z2luUmVmOiAnb3Blbmluc3RhbGwnLFxyXG4gIHJlcG86ICdodHRwczovL2dpdGh1Yi5jb20vb3Blbmluc3RhbGwvY29yZG92YS1wbHVnaW4tb3Blbmluc3RhbGwnLFxyXG4gIHBsYXRmb3JtczogWydBbmRyb2lkJywgJ2lPUyddLFxyXG59KVxyXG5ASW5qZWN0YWJsZSgpXHJcbmV4cG9ydCBjbGFzcyBPcGVuSW5zdGFsbCBleHRlbmRzIEF3ZXNvbWVDb3Jkb3ZhTmF0aXZlUGx1Z2luIHtcclxuXHJcbiAgQENvcmRvdmEoeyBzeW5jOiB0cnVlLCBwbGF0Zm9ybXM6IFsnQW5kcm9pZCddIH0pXHJcbiAgY29uZmlnQW5kcm9pZChvcHRpb25zOiBDb25maWdPcHRpb25zKTogdm9pZCB7IH1cclxuXHJcbiAgQENvcmRvdmEoeyBzeW5jOiB0cnVlIH0pXHJcbiAgc2VyaWFsRW5hYmxlZChlbmFibGVkOiBib29sZWFuKTogdm9pZCB7IH1cclxuXHJcbiAgQENvcmRvdmEoeyBzeW5jOiB0cnVlIH0pXHJcbiAgY2xpcEJvYXJkRW5hYmxlZChlbmFibGVkOiBib29sZWFuKTogdm9pZCB7IH1cclxuXHJcbiAgQENvcmRvdmEoeyBzeW5jOiB0cnVlIH0pXHJcbiAgaW5pdCgpOiB2b2lkIHsgfVxyXG5cclxuICBAQ29yZG92YSh7IHN5bmM6IHRydWUgfSlcclxuICBnZXRJbnN0YWxsKG9uU3VjY2VzczogRnVuY3Rpb24sIG9uRXJyb3I6IEZ1bmN0aW9uLCB0aW1lOiBudW1iZXIpOiB2b2lkIHsgfVxyXG5cclxuICBAQ29yZG92YSh7IHN5bmM6IHRydWUsIHBsYXRmb3JtczogWydBbmRyb2lkJ10gfSlcclxuICBnZXRJbnN0YWxsQ2FuUmV0cnkob25TdWNjZXNzOiBGdW5jdGlvbiwgb25FcnJvcjogRnVuY3Rpb24sIHRpbWU6IG51bWJlcik6IHZvaWQgeyB9XHJcblxyXG4gIEBDb3Jkb3ZhKHsgc3luYzogdHJ1ZSB9KVxyXG4gIHJlZ2lzdGVyV2FrZVVwSGFuZGxlcihvblN1Y2Nlc3M6IEZ1bmN0aW9uLCBvbkVycm9yOiBGdW5jdGlvbik6IHZvaWQgeyB9XHJcblxyXG4gIEBDb3Jkb3ZhKHsgc3luYzogdHJ1ZSB9KVxyXG4gIHJlcG9ydFJlZ2lzdGVyKCk6IHZvaWQgeyB9XHJcblxyXG4gIEBDb3Jkb3ZhKHsgc3luYzogdHJ1ZSB9KVxyXG4gIHJlcG9ydEVmZmVjdFBvaW50KHBvaW50SWQ6IHN0cmluZywgcG9pbnRWYWx1ZTogbnVtYmVyLCBleHRyYXM/OiB7IFtrZXk6IHN0cmluZ106IHN0cmluZyB9KTogdm9pZCB7IH1cclxuXHJcbiAgQENvcmRvdmEoeyBzeW5jOiB0cnVlIH0pXHJcbiAgcmVwb3J0U2hhcmUob25TdWNjZXNzOiBGdW5jdGlvbiwgb25FcnJvcjogRnVuY3Rpb24sIHNoYXJlQ29kZTogc3RyaW5nLCBzaGFyZVBsYXRmb3JtOiBzdHJpbmcpOiB2b2lkIHsgfVxyXG59XHJcblxyXG4iXX0=

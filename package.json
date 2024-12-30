@@ -1,0 +1,21 @@
+{
+    "name": "openinstall-cordova-wrapper",
+    "description": "openinstall Cordova Plugins TypeScript wrapper",
+    "main": "index.js",
+    "module": "index.js",
+    "typings": "index.d.ts",
+    "author": "wenki",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/wenkiwu/openinstall-cordova-wrapper.git"
+    },
+    "dependencies": {
+        "@types/cordova": "latest"
+    },
+    "peerDependencies": {
+        "rxjs": "^5.5.0 || ^6.5.0 || ^7.3.0",
+        "@awesome-cordova-plugins/core": "^6.0.1"
+    },
+    "version": "1.0.0"
+}
